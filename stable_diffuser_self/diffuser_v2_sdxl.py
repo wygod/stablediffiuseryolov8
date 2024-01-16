@@ -15,7 +15,7 @@ class SDGan:
 
     def processor(self, prompt, negative_prompt, width=512, height=512, image_number=1):
         images = self.model(prompt=prompt,
-                            num_inference_steps=1,
+                            num_inference_steps=4,
                             image_num_per_prompt=image_number,
                             guidance_scale=0.0,
                             width=width,
