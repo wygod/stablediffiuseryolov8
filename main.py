@@ -82,8 +82,6 @@ def check_prompt(prompt):
     return prompt_list
 
 
-
-
 if __name__ == "__main__":
 
     data = OmegaConf.load('prompt.yaml')
