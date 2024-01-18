@@ -29,7 +29,6 @@ class Owlv2Detect:
         outputs = self.model(**inputs)
 
         results = self.processor.post_process_object_detect(outputs=outputs)
-        # results [{'boxs':'', 'score':'', 'labels':''}]
 
         return results
 

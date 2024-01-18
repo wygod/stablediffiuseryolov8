@@ -1,0 +1,8 @@
+prompt:
+  - woman child :
+    - a woman, waiting in front of the kindergarten, her child, smiling and running toward her. 8k
+  - man dog :
+    - a man take his dog in the park, 8k
+
+negative_prompt:
+  - ulgy, bad anatomy, bad hands, unnatural hands, disfigured hands, three hands,asymmetrical hands,fused fingers, bad fingers, too many fingers, bent fingers, missing fingers, extra fingers, ugly fingers, long fingers, disfigured palms, extra joints, three legs, missing legs, missing arms, bad arms, poorly drawn face, bad face, fused face, cloned face, worst face, three crus, extra crus, fused crus, worst feet,three feet, fused feet, fused thigh, three thigh, fused thigh, extra thigh, worst thigh,  horn, realistic photo, extra eyes, huge eyes, 2girl, amputation, disconnected limbs

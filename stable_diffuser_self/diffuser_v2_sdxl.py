@@ -8,7 +8,7 @@ class SDGan:
     def __init__(self, model_path=None, device='cuda'):
         self.model_path = model_path if model_path else 'stabilityai/sdxl-turbo'
         self.model = self._model()
-        self.model.to("cuda")
+        self.model.to(device)
 
     def _model(self):
         return AutoPipelineForText2Image.from_pretrained(self.model_path)
