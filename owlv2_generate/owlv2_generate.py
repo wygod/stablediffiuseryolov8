@@ -24,7 +24,7 @@ class Owlv2Detect:
     def _processor(self):
         return Owlv2ForObjectDetection.from_pretrained(self.model_path)
 
-    def generate(self, prompt, image):
+    def generate(self, prompt, image, sample=None):
         inputs = self.processor(text=prompt, images=image, return_tensors=True)
         outputs = self.model(**inputs)
 

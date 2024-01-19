@@ -13,7 +13,7 @@ class SDGan:
     def _model(self):
         return AutoPipelineForText2Image.from_pretrained(self.model_path)
 
-    def processor(self, prompt, negative_prompt, width=512, height=512, image_number=1):
+    def processor(self, prompt, negative_prompt, width=512, height=512, image_number=1, seed=-1):
         images = self.model(prompt=prompt,
                             num_inference_steps=4,
                             image_num_per_prompt=image_number,
@@ -21,6 +21,6 @@ class SDGan:
                             width=width,
                             height=height,
                             negative_prompt=negative_prompt,
-                            seed=-1,
+                            seed=seed,
                             ).images
         return images
